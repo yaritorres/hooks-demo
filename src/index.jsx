@@ -3,14 +3,12 @@ import { createRoot } from "react-dom/client";
 const root = createRoot(document.getElementById("root"));
 
 import Title from './components/Title.jsx';
-import Buttons from './components/Buttons.jsx'
 
 const App = () => {
 
   return (
-    <div>
+    <div id="app">
       <Title />
-      <Buttons />
     </div>
   )
 }

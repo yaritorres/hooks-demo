@@ -1,9 +1,22 @@
 import React, { useState, useEffect } from 'react';
+import Buttons from '../components/Buttons.jsx';
 
 const Title = (props) => {
+  const [color, setColor] = useState('purple');
+
+  // useEffect(() => {
+  //   console.log('mounting');
+
+  //   setColor('green');
+
+  //   return () => { console.log('unmounting'); }
+  // })
 
   return (
-    <h1> This is a title. </h1>
+    <div id="title-div">
+      <h1 style={{color: color}} onClick={() => { setColor('purple') }}> This is a title. </h1>
+      <Buttons setColor={setColor}/>
+    </div>
   )
 }
 
