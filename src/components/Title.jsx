@@ -15,7 +15,7 @@ const Title = (props) => {
   return (
     <div id="title-div">
       <h1 style={{color: color}} onClick={() => { setColor('purple') }}> This is a title. </h1>
-      <Buttons setColor={setColor}/>
+      <Buttons setColor={setColor} index={index} setIndex={setIndex} passedArr={colorArr[index]} colorArr={colorArr} />
     </div>
   )
 }
