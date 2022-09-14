@@ -4,8 +4,7 @@
   "main": "index.jsx",
   "scripts": {
     "build": "webpack --mode=production",
-    "start": "nodemon server/index.js",
-    "dev": "webpack-dev-server --content-base src --hot"
+    "start": "nodemon server/index.js"
   },
   "author": "yaritorres",
   "license": "ISC",
